@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os 10 Mandamentos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #808080); /* Preto para Cinza */
+            color: #fff;
+            min-height: 100vh;
+            background-image: url(images/21.png);
+        }
+
+        /* Cabeçalho fixo no topo */
+        header {
+            background-color: #6d6d6d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destacar */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Linha de destaque sob o cabeçalho */
+        .header-line {
+            width: 100%;
+            height: 5px;
+            background: #ffeb3b; /* Amarelo */
+            position: fixed;
+            top: 70px; /* Alinha logo abaixo do cabeçalho */
+            z-index: 999;
+        }
+
+        /* Barra de Navegação */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 75px;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            color: #ddd;
+            border-radius: 5px;
+            transition: 2s;
+        }
+
+        /* Container do conteúdo */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            padding: 30px 40px;
+            max-width: 800px;
+            text-align: center;
+            margin: 140px auto; /* Ajustado para ficar abaixo do cabeçalho e da navegação */
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ffeb3b;  /* Amarelo */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #f5f5f5;
+            margin-bottom: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+            list-style-type: decimal;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            color: #ffeb3b; /* Amarelo no hover */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com Título -->
+    <header>
+        <h1>Os 10 Mandamentos</h1>
+    </header>
+    <!-- Linha de Destaque -->
+    <div class="header-line"></div>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Tela Inicial</a> 
+        <a href="contact.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Os 10 Mandamentos</h2>
+        <p>Diretrizes divinas para uma vida de amor, fé e propósito.</p>
+        <ol>
+            <li>Não terás outros deuses diante de mim.</li>
+            <li>Não farás para ti imagem de escultura.</li>
+            <li>Não tomarás o nome do Senhor teu Deus em vão.</li>
+            <li>Lembra-te do dia do sábado, para o santificar.</li>
+            <li>Honra teu pai e tua mãe.</li>
+            <li>Não matarás.</li>
+            <li>Não adulterarás.</li>
+            <li>Não furtarás.</li>
+            <li>Não dirás falso testemunho contra o teu próximo.</li>
+            <li>Não cobiçarás o que é do teu próximo.</li>
+        </ol>
+        <footer>Baseado no Êxodo 20:1-17</footer>
+    </div>
+</body>
+</html>
+
